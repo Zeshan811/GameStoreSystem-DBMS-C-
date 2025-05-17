@@ -1,0 +1,216 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{754FF735-ABEA-437D-8B18-4FD83445673C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>GameStoreSystem</RootNamespace>
+    <AssemblyName>GameStoreSystem</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="admindash.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="admindash.Designer.cs">
+      <DependentUpon>admindash.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cartpage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cartpage.Designer.cs">
+      <DependentUpon>cartpage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="customer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="customer.Designer.cs">
+      <DependentUpon>customer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="details.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="details.Designer.cs">
+      <DependentUpon>details.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ordersummary.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ordersummary.Designer.cs">
+      <DependentUpon>ordersummary.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ordmng.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ordmng.Designer.cs">
+      <DependentUpon>ordmng.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Homepage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Homepage.Designer.cs">
+      <DependentUpon>Homepage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="login.Designer.cs">
+      <DependentUpon>login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mngproduct.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mngproduct.Designer.cs">
+      <DependentUpon>mngproduct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="payment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="payment.Designer.cs">
+      <DependentUpon>payment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="signup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="signup.Designer.cs">
+      <DependentUpon>signup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="track.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="track.Designer.cs">
+      <DependentUpon>track.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="admindash.resx">
+      <DependentUpon>admindash.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cartpage.resx">
+      <DependentUpon>cartpage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="customer.resx">
+      <DependentUpon>customer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="details.resx">
+      <DependentUpon>details.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ordersummary.resx">
+      <DependentUpon>ordersummary.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ordmng.resx">
+      <DependentUpon>ordmng.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Homepage.resx">
+      <DependentUpon>Homepage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="login.resx">
+      <DependentUpon>login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mngproduct.resx">
+      <DependentUpon>mngproduct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="payment.resx">
+      <DependentUpon>payment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="signup.resx">
+      <DependentUpon>signup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="track.resx">
+      <DependentUpon>track.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maxresdefault.jpg" />
+    <None Include="Resources\organic-flat-design-gamer-room_52683-60686.jpg" />
+    <None Include="Resources\shield_person_120dp_FFFFFF_FILL0_wght400_GRAD0_opsz48.png" />
+    <None Include="Resources\stadia_controller_120dp_FFFFFF_FILL0_wght400_GRAD0_opsz48.png" />
+    <None Include="Resources\logout_40dp_FFFFFF_FILL0_wght400_GRAD0_opsz40.png" />
+    <None Include="Resources\noun-logout-6787653.png" />
+    <None Include="Resources\order_approve_40dp_FFFFFF_FILL0_wght400_GRAD0_opsz40.png" />
+    <None Include="Resources\shopping_cart.png" />
+    <None Include="Resources\receipt.png" />
+    <None Include="Resources\order.png" />
+    <None Include="Resources\home.png" />
+    <None Include="Resources\person.png" />
+    <None Include="Resources\logo.png" />
+    <None Include="Resources\Gaming-Informer-Gaming-Websites.jpg" />
+    <None Include="Resources\Gaming-Informer-Gaming-Websites1.jpg" />
+    <None Include="Resources\images.jpeg" />
+    <None Include="Resources\arrow_back_.png" />
+    <None Include="Resources\arrow_back_41dp_230B61_FILL0_wght400_GRAD0_opsz40.png" />
+    <None Include="Resources\arrow_bac.png" />
+    <None Include="Resources\arrow_bac1.png" />
+    <Content Include="Resources\logoaccount.png" />
+    <None Include="Resources\logoaccount1.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
